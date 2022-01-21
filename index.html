@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
+    <meta name = "theme-color" content = "#2740af"/>
+   
+    <title>Cocktail api</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- include an external JavaScript file -->
+    <script src="myscript.js"></script>
+	
+	<!-- <link rel="manifest" href="manifest.json"> -->
+	
+  </head>
+  
+  <body>
+    <!-- page content -->
+	
+
+	<div id="sticky-top" >
+	<div id="search-box" >
+	<h2 id="icon" onclick="returnOriSetup()">Alchol You Later <i class="fas fa-cocktail" id="iIcon" ></i></h2>
+	
+	<input type="text" id="search" placeholder="Search cocktail recipes..." onkeypress="toSearch(event)" autocomplete="off" >
+   <!--  <span id="button" onclick="fetchSearch()"><i class="fa fa-search"></i></span> -->
+	</div>
+	
+	<p id="click-to-switch" >Click to switch</p>
+	
+	<div id="header">
+	<ul class="select-list" >
+	<li id="sb-name" onclick="searchBName()" >Search by Name</li>
+	<li id="sb-ing" onclick="searchBIng()" >Search by Ingredient</li>
+	<li id="sb-id" onclick="searchBId()" >Search by ID</li>
+	
+	</ul>
+	</div>
+	</div>
+	
+	<div id="sidebar" >
+	<h4>Show all</h4>
+	<span onclick="closeSide()">&times;</span>
+	<ul>
+	<li onclick="allAlco()" >Alcoholic</li>
+	<li onclick="allNonAl()" >Non Alcoholic</li>
+	<li onclick="allCoc()">Cocktail</li>
+	<li onclick="allOrd()" >Ordinary Drink</li>
+	<li id="sb-ran" onclick="searchRan()" >Random Cocktail!</li>
+	</ul>
+	</div>
+	
+	<p id="openNav" onclick="openSide()">Show all &#9659;</p>
+	
+	<div id="wrap" >
+	<div id="hero-screen" >
+	<div>
+	<h1 id="big-title" >Alcohol You Later - Cocktail Recipes</h1>
+	
+	<hr>
+	
+	<p>
+We provide all kinds of drinks recipes, not only it is free, it is also wide-range.<br>Sweet hot chocolates to cocktails, we’ve got it.</p>
+	</div>
+	</div>
+	
+
+	 <div id="main">
+	 
+	 </div>
+	 
+	</div>
+	
+<div id="drink-wrap" >
+<span onclick="closeDrink()" ><i class="far fa-times-circle"></i></span>
+	 <div id="detailInfo" >
+	 </div>
+	 <hr id="drinkHr" >
+	 <br>
+	 <div id="instruBox" >
+	 <p>Click to switch language</p>
+		 <ul id="instruLangSelec">
+		 </ul>
+		 
+		 <div id="instru">
+		 </div>
+	
+	</div>
+	<br>
+	<div id="iIngre" >
+	<h3>Ingredients: </h3>
+	<div id="main-drink">
+	</div>
+	</div>
+	
+	
+
+</div>
+  </body>
+  
+</html>

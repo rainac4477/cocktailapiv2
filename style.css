@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+/* font-family: 'Meow Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', cursive; */
+
+
+body {
+	margin: 0;
+	background-color: #fafafa;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #00171F;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
+#big-title {
+	font-family: 'Meow Script', cursive;
+	font-size: 3em;
+	margin: 0px;
+	text-align: center;
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+
+.select-list {
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;	
+	overflow: hidden;
+	margin: auto;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 0.5px solid #4f4f4f;
+	color: #003459;
+	
+}
+
+#sticky-top {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.8);
+	backdrop-filter: blur(5px)
+}
+
+
+ul { /*temperary*/
+	width: 100%;
+	list-style-type: none;
+	margin: 0;	
+	overflow: hidden;
+	margin: auto;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+	margin: auto;
+}
+
+li {
+	float:left;
+	text-align: center;
+	padding: 16px;
+	cursor: pointer;
+	transition: all 0.2s;
+
+}
+
+.select-list li:hover {
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+	color: #00A7E1;
+}
+
+
+li.special:after {
+	content: "	\2713";
+	font-weight: 900;
+}
+
+#sidebar h4 {
+	font-size: 1.2em;
+	text-indent: 20px;
+	font-variant: small-caps;
+	font-weight: 900;
+	color: #61517B;
+}
+
+#sidebar span {
+	transition: transform 0.25s;
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	right:0;
+	margin: 20px;
+	font-size: 3em;
+	
+}
+
+#sidebar li {
+	text-align: left;
+	padding: 8px;
+	font-size: 24px;
+	display: block;
+	width: 90%;
+	text-indent: 20px;
+	transition: border-radius 0.3s;
+}
+
+#sidebar li:hover {
+	background-color: #003459;
+	color: #F6E8EA;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	text-indent: 35px;
+}
+
+#sidebar {
+	transition: all 0.4s;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	left: -100%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	display: block;
+	z-index: 2;
+	color: #8C7AA9;
+}
+
+#wrap {
+	transition: all 0.5s;
+	visibility: visible;
+	opacity: 1;
+}
+
+#openNav {
+	transition: all 0.25s, opacity 0.2s;
+	float: left;
+	top: 23%;
+	height: auto;
+	width: auto;
+	padding: 0.2em;
+	margin: 0;
+	font-size: 1.2em;
+	cursor: pointer;
+	position: fixed;
+	background-color: #8C7AA9;
+	text-align: left;
+	justify-content: center;
+	align-items: center;
+	border-bottom-right-radius: 60px;
+	border-top-right-radius: 60px;
+	opacity: 1;
+	z-index: 2;
+	font-weight: bold;
+	color: #F6E8EA;
+	font-variant: small-caps;
+}
+
+#openNav:hover {
+	background-color: #00A7E1;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+
+#sidebar span:hover {
+	transform: rotate(-90deg);
+}
+
+#click-to-switch {
+	color: #4f4f4f;
+	margin: 0;
+	text-align: center;
+}
+
+#search-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+#search {
+	width: 60vw;
+	height: 50px;
+	border: 1.5px solid #00A7E1;
+	border-radius: 30px;
+	font-size: 1.2em;
+	margin: 0;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+	text-indent: 10px;
+	
+}
+
+#search:focus {
+	outline: none;
+}
+
+#button {
+	height: 55px;
+	width: 55px;
+	margin: 0;
+	background-color: #4ECDC4;
+	border: none;
+	font-family: 'Overlock SC', cursive;
+	color: #fff;
+	font-size: 1.5em;
+	transition: 0.2s ease-in;
+	cursor: pointer;
+	text-align: center;
+}
+
+#icon {
+	letter-spacing: -1px;
+	text-align: center;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+	user-select: none;
+	color: #00171F;
+	cursor: pointer;
+}
+
+#icon:hover #iIcon {
+	transform: rotate(-40deg);
+}
+
+#icon:active #iIcon {
+	transform: rotate(45deg);
+}
+
+#iIcon {
+	transition: transform 0.25s;
+}
+
+#hero-screen {
+	transition: height 0.5s;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 30px;
+	align-items: center;
+	position: fixed;
+	height: 100vh;
+	top:0;
+	max-height: 100vh;
+	width: 100vw;
+	max-width: 100vw;
+	background-image: url("images/hero.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+}
+
+#hero-screen hr {
+	height: 10px;
+	width: 50px;
+	background-color: #fafafa;
+	border: none;
+}
+
+#hero-screen p {
+	max-width: 1000px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+	text-align: center;
+	font-size: 1em;
+	display: block;
+	margin: auto;
+}
+
+.drinkImage {
+	transition: box-shadow 0.25s;
+	width: 200px;
+	border-radius: 	10px 50px 10px 50px;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+
+.drinkImage-info {
+	width: 200px;
+	grid-area: drinkImage-info;
+	justify-self: center;
+	border-radius: 5px;
+}
+
+.drinkList {
+	cursor: pointer;
+	padding: 20px;
+	text-align: center;
+	
+}
+
+.drinkList h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+	margin: 0;
+}
+
+.drinkList h6 {
+	margin: 0;
+}
+
+.drinkList:hover .drinkImage{
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0 0 20px 5px rgba(0,0,0,0.2);
+	outline: 1px solid white;
+}
+
+.drinkList:hover h2 {
+	color: #61517B;
+}
+
+#header{
+	text-align: center;
+	
+}
+
+#main , #main-drink{
+	transition: all 0.25s;
+	/*padding: 20px;*/
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 25%;
+	padding: 0;
+	width: calc(100vw - 8%);
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+#main {
+	flex-direction: row;
+	overflow: hidden;
+}
+
+#main-drink {
+	width: auto !important;
+}
+
+.drinkIngredient {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.drinkIngredient img {
+	width: 100px;
+}
+
+#instruBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#instruBox ul li {
+	float: none;
+	display: inline;
+	transition: text-shadow 0.20s , color 0.20s;
+	border-bottom: 1px solid #6B5988;
+}
+
+#instruBox ul li:hover {
+	text-shadow: 0px 0px 30px rgba(0,0,0,1);
+	color: #1FC7FF;
+}
+
+#instruBox p {
+	margin: 0;
+	color: #8f8f8f;
+}
+
+#instruBox ul {
+	text-align: center;
+	display: inline;
+	
+}
+
+/* drink */
+#detailInfo {
+	display: grid;
+	/*
+	grid-template-areas:
+	'drinkTitle drinkId'
+	'drinkDate drinkDate'
+	'drinkImage-info drinkType'
+	'drinkImage-info drinkGlass'
+	'alcho alcho'
+	;*/
+	
+	grid-template-areas:
+	'drinkTitle drinkTitle'
+	'drinkDate drinkDate'
+	'drinkImage-info drinkImage-info'
+	'drinkImage-info drinkImage-info'
+	'drinkId drinkId'
+	'drinkType drinkGlass'
+	'alcho alcho'
+	;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#drinkTitle {
+	grid-area: drinkTitle;
+	font-family: 'Abril Fatface', cursive;
+	color: #ffffff;
+}
+
+#drinkId {
+	grid-area: drinkId;
+}
+
+#drinkDate {
+	grid-area: drinkDate;
+}
+
+#drinkType {
+	grid-area: drinkType;
+}
+
+#drinkGlass {
+	grid-area: drinkGlass;
+}
+
+#alcho {
+	grid-area: alcho;
+}
+
+#drink-wrap h3 {
+	text-align: center;
+}
+
+#drink-wrap {
+  transition: all 0.25s;
+  position:absolute;
+  top: 100vh;
+  left:0px;
+  width: calc(100% - 30px);
+  max-width: calc(100vw - 30px) !important;
+  height:0;
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 123;
+  overflow: auto;
+  user-select: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #EAE6EF;
+}
+
+#drink-wrap.visible {
+	height: 100vh;
+	top: 0;
+	user-select: auto;
+	opacity: 1;
+	visibility: visible;
+	background-color:rgba(0,0,0,0.7);
+    backdrop-filter: blur(18px);
+}
+
+#drink-wrap hr {
+	width: 9em;
+	height: 10px;
+	border: none;
+	background-color: #003459;
+}
+
+#drink-wrap span {
+	font-size: 3em;
+	margin-top: 30px;
+	margin-right: 30px;
+	right: 0;
+	position: absolute !important;
+	align-self: start !important;
+	transition: transform 0.25s;
+}
+
+#drink-wrap span:hover{
+	color: #1FC7FF;
+	cursor: pointer;
+	transform: rotate(-90deg);
+}
+
+#instruLangSelec {
+	width: auto;
+	margin: 0;
+	padding: 20px;
+	font-size: 1.2em;
+}
+
+#instru {
+	padding: 5px;
+	text-align: center;
+}
+
+#iIngre h3 {
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+}
+
+
+
+/* Desktop Version */
+@media (min-width: 768px) {
+
+	
+	#sidebar {
+		width: 15%;
+		left: -15%;
+	}
+	
+	#openNav { /* another quary for tablets */
+		top: 16%;
+	}
+	
+	#hero-screen {
+		padding: 0;
+	}
+	
+	#big-title {
+		font-size: 5em;
+	}
+	
+	#hero-screen p {
+		font-size: 1.2em;
+	}
+	
+	#search {
+		font-size: 1.5em;
+	}
+	
+	#detailInfo {
+		margin-top: 30px;
+		grid-template-areas:
+		'. . .'
+		'drinkImage-info drinkTitle drinkTitle'
+		'drinkImage-info drinkDate drinkDate'
+		'drinkImage-info drinkType drinkGlass'
+		'drinkId alcho alcho'
+		;
+		
+		grid-area: detailInfo;
+	}
+	
+	#drinkType , #drinkGlass {
+		border-bottom: 5px solid #8C7AA9;
+	}
+	
+	.drinkImage-info {
+		width: 300px;
+		margin: 20px;
+	}
+	#instruBox {
+		grid-area: instruBox;
+	}
+	
+	#iIngre {
+		grid-area: iIngre;
+	}
+
+	
+	#drinkHr {
+		grid-area: drinkHr;
+	}
+	
+	#drink-wrap{
+		display: grid;
+		grid-template-areas:
+		'detailInfo iIngre'
+		'drinkHr iIngre'
+		'instruBox iIngre'
+		;
+		justify-content: space-evenly;
+		align-items: center;
+		font-size: 1.2em;
+		grid-template-columns: 60% 40%;
+	}
+	
+	#instru {
+		max-width: 60%;
+	}
+	
+	#drinkTitle {
+		font-size: 2em !important;
+	}
+	
+	#drinkDate {
+		margin: 0px;
+		align-self: start;
+	}
+	
+}
+
+@media (max-width: 500px) {
+	
+	#openNav {
+		top: 90%;
+	}
+}
